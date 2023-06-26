@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ticket-bus-db:
+    image: "postgres"
+    container_name: "ticket-bus-db"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=ticket-bus-db
+    ports:
+      - "5432:5432"
